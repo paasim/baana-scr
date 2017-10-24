@@ -7,5 +7,5 @@ urlBikes = "http://www1.infracontrol.com/cykla/barometer/barometer_fi.asp?system
 
 main :: IO ()
 main = do
-  res <- openUrl urlBikes
-  putStr res
+  res <- extractCount urlBikes
+  putStrLn res

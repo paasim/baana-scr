@@ -1,7 +1,7 @@
 name:                baana-scr
-version:             0.1.0.0
-synopsis:           get the number at the baana-counter
-description:        this is a rewrite of the existing shell-scripts
+version:             0.1.1.0
+synopsis:            get the number at the baana-counter
+description:         this is a rewrite of the existing shell-scripts
 homepage:            https://github.com/paasim/baana-scr#readme
 license:             BSD3
 license-file:        LICENSE
