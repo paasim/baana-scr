@@ -1,11 +1,10 @@
 module Main where
 
-import Lib
+import Scrape
+import DB
 
 urlBikes :: String
 urlBikes = "http://www1.infracontrol.com/cykla/barometer/barometer_fi.asp?system=helsinki&mode=year"
 
 main :: IO ()
-main = do
-  res <- extractCount urlBikes
-  print res
+main = extractCount urlBikes >>= writeValToDB
